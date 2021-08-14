@@ -28,10 +28,10 @@ public class TelegramBotBrain {
         return fakeGuruBrain;
     }
 
-    private void setUser(String username, String firstname, String surname) {
-        bot.setUservar(username, "username", "@" + username);
-        bot.setUservar(username, "firstname", "@" + username);
-        bot.setUservar(username, "lastname", "@" + username);
+    private void setUser(String username, String firstname, String lastname) {
+        bot.setUservar(username, "username", username);
+        bot.setUservar(username, "firstname", firstname);
+        bot.setUservar(username, "lastname", lastname);
     }
 
     public void reply(MessageHandler messageHandler) {
